@@ -58,7 +58,7 @@ void main(){
                 if(alive[i][j]==3){
                     next[i][j]=1;
                 }
-                else{
+                else{           
                     next[i][j]=0;
                 }
             }
