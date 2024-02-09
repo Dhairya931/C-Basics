@@ -12,7 +12,7 @@ scanf("%d",&n);
 printf("Enter the value of %d Numbers:",n);
 for(i=0;i<=n-1;i++)
 scanf("%d",&LA[i]);
-printf("The original array elements are :\n");
+printf("The original array elements are :\n");//Misleading indentation: statement is indented too deeply clang-tidy (readability-misleading-indentation) [15, 1]
 traverse(LA,n);
 while(choice==1)
 {
@@ -65,7 +65,7 @@ int i, Item;
 Item= A[Pos];
 for(i=Pos+1;i<=n-1;i++)
 A[i-1]=A[i];
-return(Item);
+return(Item);//Misleading indentation: statement is indented too deeply clang-tidy (readability-misleading-indentation) [68, 1]
 }
 
 void traverse(int A[ ], int N)//Function Definition
@@ -83,7 +83,7 @@ void insertion (int A[ ], int n, int Element, int Pos)//Function Definition
 int i;
 for(i=n-1;i>=Pos;i--)
 A[i+1]=A[i];
-A [Pos] = Element;
+A [Pos] = Element;//Misleading indentation: statement is indented too deeply clang-tidy (readability-misleading-indentation) [86, 1]
 }
 
 int sum(int A[ ],int n)

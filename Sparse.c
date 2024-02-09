@@ -52,11 +52,11 @@ sparseMatrix[k][1] = j;
 sparseMatrix[k][2] = Matrix[i][j];
 k++;
 }
-for (int i=0; i<nonzero_count+1; i++)
+for (int i=0; i<nonzero_count+1; i++)//Misleading indentation: statement is indented too deeply clang-tidy (readability-misleading-indentation) [55, 1]
 {
 for (int j=0; j<3; j++)
 printf("%d ",sparseMatrix[i][j]);
-printf("\n");
+printf("\n");//Misleading indentation: statement is indented too deeply clang-tidy (readability-misleading-indentation) [59, 1]
 }
 }
 else
